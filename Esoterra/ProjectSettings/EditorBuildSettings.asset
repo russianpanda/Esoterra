@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Olympus.unity
     guid: add465d00eaa47441b29d8fe7457e6e5
   - enabled: 1
+    path: Assets/Scenes/Esoterra.unity
+    guid: 80a7b5808b43ae245bc2c97ce3cfc017
+  - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: 2b9ffa0edb776bd44b0679c7e3ac7dd9
+  - enabled: 0
+    path: Assets/Scenes/new-enemy-scene.unity
+    guid: b05c895faacaa9a4598a8039b45107f1
   m_configObjects: {}
