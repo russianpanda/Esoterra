@@ -84,7 +84,7 @@ public class EnemyAITest : MonoBehaviour
         if (distance<=enemyRange){
             
             FacePlayer();
-            agent.SetDestination(target.position);
+            agent.SetDestination(target.position);;
             //chase player if the player is within range
             
             //Debug.Log("Chasing");

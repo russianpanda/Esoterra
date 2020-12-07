@@ -34,10 +34,12 @@ public class GameOver : MonoBehaviour
 
     public void LoadMenu(){
         Time.timeScale = 1f; //unpauses game
+        Debug.Log("Main menu");
         SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 
     public void quitGame(){
+        Debug.Log("Quitting game");
         Application.Quit();
     }
 }

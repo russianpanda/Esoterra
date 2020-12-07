@@ -43,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
         float verticalAxis = Input.GetAxis("Vertical");
         Vector3 playerMovement = transform.right * horizontalAxis + transform.forward * verticalAxis;
         controller.Move(playerMovement * playerSpeed * Time.deltaTime);
-        if (health.health>0 && (horizontalAxis!=0 || verticalAxis!=0)){
+        currentHealth = health.health;
+        if (currentHealth>0 && (horizontalAxis!=0 || verticalAxis!=0)){
             //if the player is moving
             //GameObject.Find("Ch50_nonPBR").SetActive(false);
             if (!playerWalking.isPlaying){
