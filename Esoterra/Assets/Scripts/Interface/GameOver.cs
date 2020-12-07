@@ -9,8 +9,12 @@ public class GameOver : MonoBehaviour
 
     public GameObject gameOverUI;
 
+    private AudioSource gameOverMusic;
+
     void Start(){
         Cursor.visible = true;
+        gameOverMusic = gameObject.GetComponent<AudioSource>();
+        gameOverMusic.Play();
     }
     
     void Update()
