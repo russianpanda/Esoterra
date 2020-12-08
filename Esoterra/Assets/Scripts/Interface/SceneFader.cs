@@ -6,14 +6,6 @@ public class SceneFader : MonoBehaviour
     public Animator animator;
     private int levelToLoad;
 
-    void Update()
-    {
-        if (Input.GetKeyDown("f1"))
-        {
-            FadeToNextLevel();
-        }
-    }
-
     public void FadeToNextLevel()
     {
         FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
