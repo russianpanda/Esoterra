@@ -21,6 +21,7 @@ public class AncientArtifact : DialogueUser
         displayName = "Ancient Artifact";
         interactionVerb = "Touch";
         interactionDistance = 4f;
+        nextButtonFinalString = "End";
     }
     
     public override void Awake()

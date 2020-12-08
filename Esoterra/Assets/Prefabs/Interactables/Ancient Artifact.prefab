@@ -10155,7 +10155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5470118525431583237
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10458,8 +10458,16 @@ MonoBehaviour:
   interactKey: e
   audioSources: []
   playerController: {fileID: 0}
-  dialogueStrings: []
-  nextButtonFinalString: Leave
+  dialogueStrings:
+  - "Could it be..?\r"
+  - '[You feel a warmth within you as you press your hand against the runestone.]'
+  - This... is the artifact.
+  - This is why Olympus left Earth so many eons ago. This is why I'm here.
+  - '[A warmth pulses through you again, banishing the chill of the biting air.]'
+  - '[You feel calm. There is no more loneliness from outer space.]'
+  - I feel...
+  - Home.
+  nextButtonFinalString: End Game
   dialogueManager: {fileID: 0}
   firstInteractAudio: {fileID: 8300000, guid: 2f51791557d907d4a8fff6b05b0d948f, type: 3}
   activeCrystalMaterial: {fileID: 2100000, guid: 22c190d9799fbce4382191eb622c83cc, type: 2}
@@ -10762,7 +10770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5470118526538027651
 RectTransform:
   m_ObjectHideFlags: 0

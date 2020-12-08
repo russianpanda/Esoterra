@@ -132,7 +132,7 @@ public class DialogueManager : MonoBehaviour
         playerMovement.enabled = false;
     }
 
-    public void ExitDialogue()
+    public virtual void ExitDialogue()
     {
         inDialogue = false;
         dialoguePosition = 0;
