@@ -9,6 +9,14 @@
 
 <br>
 
+## Installing the Project
+This project uses **Git Large File Storage**, therefore it must be cloned to fetch all the dependencies and files that are required to run it.
+
+To clone the repo, run:
+>git clone https://github.com/russianpanda/Esoterra.git
+
+## Running the Game
+Initial scene of the project is "Main Menu Room", which is used to start the game.
 
 ## Third Party Assets
 
