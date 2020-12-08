@@ -5,7 +5,7 @@
 </h3>
 
 ## ECS657U - Multi-Platform Game Development Project
-### Group AC : Vladislavas Gavinas, Shona Lowden
+### Group AC : Vladislavas Gavinas, Amin Ullah, Shona Lowden
 
 <br>
 
