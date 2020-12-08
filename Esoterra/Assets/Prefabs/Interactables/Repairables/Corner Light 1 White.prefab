@@ -96,47 +96,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2113069908678484882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2212036027309945090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b171e8f7b36113149874007a889254be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myLight: {fileID: 2212036027316160678}
-  minFlickerTime: 0.3
-  maxFlickerTime: 0.6
---- !u!114 &4384212849165239027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2212036027309945090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5a51c076a122c41a9cc8abbe0e819a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  displayName: Light
-  interactionVerb: Repair
-  interactionDistance: 4
-  outlineObject: {fileID: 2212036027309945090}
-  displayNameText: {fileID: 4616706801217808503}
-  interactionVerbText: {fileID: 4616706802796813775}
-  interactKey: e
-  audioSources: []
-  playerController: {fileID: 0}
-  requiredResources: 0500000002000000
-  requiredQuantity: 0100000001000000
-  continuousAudioWhenBroken: 1
-  broken: 0
-  repairManager: {fileID: 0}
 --- !u!82 &4602673326555904908
 AudioSource:
   m_ObjectHideFlags: 0
@@ -233,6 +192,47 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2113069908678484882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212036027309945090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b171e8f7b36113149874007a889254be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLight: {fileID: 2212036027316160678}
+  minFlickerTime: 0.3
+  maxFlickerTime: 0.6
+--- !u!114 &4384212849165239027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212036027309945090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de5a51c076a122c41a9cc8abbe0e819a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: Light
+  interactionVerb: Repair
+  interactionDistance: 4
+  outlineObject: {fileID: 2212036027309945090}
+  displayNameText: {fileID: 4616706801217808503}
+  interactionVerbText: {fileID: 4616706802796813775}
+  interactKey: e
+  audioSources: []
+  playerController: {fileID: 0}
+  requiredResources: 0500000002000000
+  requiredQuantity: 0100000001000000
+  continuousAudioWhenBroken: 1
+  broken: 0
+  repairManager: {fileID: 0}
 --- !u!1 &3176544588930035362
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,11 +354,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7783500096026334179, guid: 13a7a935e50e9534aaae61f433887421, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7783500096594552408, guid: 13a7a935e50e9534aaae61f433887421, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7783500096988012577, guid: 13a7a935e50e9534aaae61f433887421, type: 3}
       propertyPath: m_Name
