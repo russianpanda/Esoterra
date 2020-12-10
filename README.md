@@ -36,11 +36,11 @@ Initial scene of the project is "Main Menu Room", which is used to start the gam
 ### Fonts
 - [Nasalization](https://www.dafont.com/nasalization.font)
 
-### Interactable Objects
-- [Silicon](https://assetstore.unity.com/packages/3d/props/ball-pack-446)
-- [Iron](https://assetstore.unity.com/packages/3d/props/medieval-gold-14162)
+### Inventory Resources
 - [Aluminium, Carbon](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-objects-pack-1-170478)
 - [Blue Matter, Health Globe](https://assetstore.unity.com/packages/vfx/particles/powerup-particles-16458)
+- [Iron](https://assetstore.unity.com/packages/3d/props/medieval-gold-14162)
+- [Silicon](https://assetstore.unity.com/packages/3d/props/ball-pack-446)
 
 ### Interface
 - [Crosshair](https://kenney.nl/assets/crosshair-pack)
