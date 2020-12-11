@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Teleporter : Repairable
+public class TeleporterToEsoterra : Repairable
 {
     public GameObject activateOnRepair;
 

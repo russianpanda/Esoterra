@@ -29,21 +29,19 @@ Initial scene of the project is "Main Menu Room", which is used to start the gam
 - [freeSFX](https://freesfx.co.uk/Default.aspx)
 - [KenneyNL](https://kenney.nl/assets?q=audio)
 - [Reverse Door Slam.wav](https://freesound.org/people/MegaBlasterRecordings/sounds/366886/)
+- [Sci-Fi Platform Teleport](https://freesound.org/people/DWOBoyle/sounds/474180/)
 - [Space_Atmosphere_04.wav](https://freesound.org/people/MATRIXXX_/sounds/396625/)
 - [The Invasion (Atmospheric/Title Screen, Sci-Fi)](https://assetstore.unity.com/packages/audio/music/the-invasion-atmospheric-title-screen-sci-fi-95819)
 - [WinterSolsticeNight.wav](https://freesound.org/people/daveincamas/sounds/65247/)
 
-### Fonts
-- [Nasalization](https://www.dafont.com/nasalization.font)
+### Interface
+- [Crosshair](https://kenney.nl/assets/crosshair-pack)
 
 ### Inventory Resources
 - [Aluminium, Carbon](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-objects-pack-1-170478)
 - [Blue Matter, Health Globe](https://assetstore.unity.com/packages/vfx/particles/powerup-particles-16458)
 - [Iron](https://assetstore.unity.com/packages/3d/props/medieval-gold-14162)
 - [Silicon](https://assetstore.unity.com/packages/3d/props/ball-pack-446)
-
-### Interface
-- [Crosshair](https://kenney.nl/assets/crosshair-pack)
 
 ### Level Design
 - [AllSky Skybox Set](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014)
@@ -55,6 +53,11 @@ Initial scene of the project is "Main Menu Room", which is used to start the gam
 - [Snow Mountain](https://assetstore.unity.com/packages/3d/environments/landscapes/free-snow-mountain-63002)
 - [Winter Zone Mini - Textures](https://assetstore.unity.com/packages/3d/environments/landscapes/winter-zone-mini-107583)
 
+### VFX
+- [52 Special Effects Pack](https://assetstore.unity.com/packages/vfx/particles/spells/52-special-effects-pack-10419)
+- [Effect textures and prefabs](https://assetstore.unity.com/packages/vfx/particles/effect-textures-and-prefabs-109031)
+
 ### Miscellaneous
+- [Nasalization Font](https://www.dafont.com/nasalization.font)
 - [NavMeshComponents](https://github.com/Unity-Technologies/NavMeshComponents)
 - [Json.Net.Unity3D](https://github.com/SaladLab/Json.Net.Unity3D)
