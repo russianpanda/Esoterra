@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 
 public class DialogueManager : MonoBehaviour
@@ -30,8 +31,7 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public bool inDialogue = false;
 
     // Disable during dialogue
-    MouseLook playerMouseLook;
-    PlayerMovement playerMovement;
+    FirstPersonController playerController;
     Image crosshair;
 
 
@@ -52,8 +52,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         crosshair = GameObject.Find("Crosshair").GetComponent<Image>();
-        playerMouseLook = Camera.main.GetComponent<MouseLook>();
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
     }
 
     void Update()
@@ -128,8 +127,7 @@ public class DialogueManager : MonoBehaviour
 
         // Disable components during dialogue
         crosshair.enabled = false;
-        playerMouseLook.enabled = false;
-        playerMovement.enabled = false;
+        playerController.enabled = false;
     }
 
     public virtual void ExitDialogue()
@@ -140,8 +138,7 @@ public class DialogueManager : MonoBehaviour
 
         // Re-enable components
         crosshair.enabled = true;
-        playerMouseLook.enabled = true;
-        playerMovement.enabled = true;
+        playerController.enabled = true;
     }
 
     public virtual void NextDialogue()

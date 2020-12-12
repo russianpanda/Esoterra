@@ -46,7 +46,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ad3281db2f0fbe64a9a052bfdbb51617, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5742,9 +5742,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834503ed0da8f7b40a279cfa7bd92c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xAxisSpeed: 0
-  yAxisSpeed: 0
-  zAxisSpeed: 20
+  xAxisSpeed: -20
+  yAxisSpeed: -20
+  zAxisSpeed: -20
 --- !u!1 &6207964008644723553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,7 +5773,7 @@ Transform:
   m_GameObject: {fileID: 6207964008644723553}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0.004585266, y: 2.46, z: -0.037330627}
-  m_LocalScale: {x: 0.52, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 0.52, y: 1.5, z: 2.25}
   m_Children: []
   m_Father: {fileID: 6207964007012600363}
   m_RootOrder: 1
@@ -5914,7 +5914,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.39
+      scalar: 0.49
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -10647,8 +10647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAxisSpeed: 0
-  yAxisSpeed: 0
-  zAxisSpeed: 20
+  yAxisSpeed: 20
+  zAxisSpeed: 90
 --- !u!1 &6207964008644733231
 GameObject:
   m_ObjectHideFlags: 0
@@ -11182,6 +11182,10 @@ PrefabInstance:
       propertyPath: compressorActivateOnRepair
       value: 
       objectReference: {fileID: 6207964007012600372}
+    - target: {fileID: 5873954447101408254, guid: 9ae8c64527c178649bf76946279c0230, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7537586962177967492, guid: 9ae8c64527c178649bf76946279c0230, type: 3}
       propertyPath: m_Name
       value: Compressor Tube Slow
@@ -11296,6 +11300,10 @@ PrefabInstance:
     - target: {fileID: 922354859508170974, guid: b40303016d2ccdb4c8e441f7bb5b87f7, type: 3}
       propertyPath: m_Name
       value: Compressor Tube Fast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878238925082523300, guid: b40303016d2ccdb4c8e441f7bb5b87f7, type: 3}
+      propertyPath: m_Volume
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 3878238925082523302, guid: b40303016d2ccdb4c8e441f7bb5b87f7, type: 3}
       propertyPath: otherTube

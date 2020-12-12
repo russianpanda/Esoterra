@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 
 public class RepairManager : MonoBehaviour
@@ -24,8 +25,7 @@ public class RepairManager : MonoBehaviour
     bool inRepair = false;
 
     // Disable during repair
-    MouseLook playerMouseLook;
-    PlayerMovement playerMovement;
+    FirstPersonController playerController;
     Image crosshair;
 
     
@@ -43,8 +43,7 @@ public class RepairManager : MonoBehaviour
     void Start()
     {
         crosshair = GameObject.Find("Crosshair").GetComponent<Image>();
-        playerMouseLook = Camera.main.GetComponent<MouseLook>();
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
     }
 
     void Update()
@@ -84,8 +83,7 @@ public class RepairManager : MonoBehaviour
 
         // Disable components during repair
         crosshair.enabled = false;
-        playerMouseLook.enabled = false;
-        playerMovement.enabled = false;
+        playerController.enabled = false;
     }
 
     void ExitRepair()
@@ -95,8 +93,7 @@ public class RepairManager : MonoBehaviour
 
         // Re-enable components
         crosshair.enabled = true;
-        playerMouseLook.enabled = true;
-        playerMovement.enabled = true;
+        playerController.enabled = true;
     }
 
     void Proceed()

@@ -8,8 +8,14 @@ public class PlayerRaycasting : MonoBehaviour
     // Camera looking
     Ray ray;
     RaycastHit hit;
+    LayerMask playerLayer;
 
 
+    void Start()
+    {
+        playerLayer = 1 << LayerMask.NameToLayer("playerIndicator");
+    }
+    
     void Update()
     {
         ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
@@ -27,7 +33,7 @@ public class PlayerRaycasting : MonoBehaviour
 
     public GameObject LookingAt()
     {
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, ~playerLayer)) {
             return hit.transform.gameObject;
         }
         return null;
