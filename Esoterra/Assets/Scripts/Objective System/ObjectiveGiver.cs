@@ -50,15 +50,19 @@ public class ObjectiveGiver : DialogueUser
 
         // Have interacted and received the objective, but not completed it
         else if (Given && !Completed) {
-            audioSources[0].clip = objectiveAudioClip;
-            if (HasAudio()) audioSources[0].Play();
+            if (HasAudio()) {
+                audioSources[0].clip = objectiveAudioClip;
+                audioSources[0].Play();
+            }
             CheckObjective();
         }
 
         // Have interacted and completed the objective
         else {
-            audioSources[0].clip = completedAudioClip;
-            if (HasAudio()) audioSources[0].Play();
+            if (HasAudio()) {
+                audioSources[0].clip = completedAudioClip;
+                audioSources[0].Play();
+            }
 
             dialogueManager.AddNewDialogue(
                 displayName,

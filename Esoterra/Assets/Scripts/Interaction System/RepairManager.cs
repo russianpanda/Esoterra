@@ -23,6 +23,7 @@ public class RepairManager : MonoBehaviour
     // Repair
     GameObject repairableObject;
     bool inRepair = false;
+    [HideInInspector] public string repairButtonString = "Repair";
 
     // Disable during repair
     FirstPersonController playerController;
@@ -32,7 +33,7 @@ public class RepairManager : MonoBehaviour
     void Awake()
     {
         exitButton.GetComponentInChildren<Text>().text = "Exit [" + exitKey + "]";
-        repairButton.GetComponentInChildren<Text>().text = "Repair [" + repairKey + "] >";
+        repairButton.GetComponentInChildren<Text>().text = repairButtonString + " [" + repairKey + "] >";
 
         exitButton.onClick.AddListener(delegate { ExitRepair(); });
         repairButton.onClick.AddListener(delegate { Proceed(); });
@@ -61,11 +62,14 @@ public class RepairManager : MonoBehaviour
         }
     }
 
-    public void AddNewRepair(string name, string body, GameObject obj)
+    public void AddNewRepair(string name, string body, GameObject obj, string buttonString)
     {
         displayNameText.text = name;
         bodyText.text = body;
         repairableObject = obj;
+
+        repairButtonString = buttonString;
+        repairButton.GetComponentInChildren<Text>().text = repairButtonString + " [" + repairKey + "] >";
 
         if (repairableObject.GetComponent<Repairable>().PlayerCanRepair()) {
             repairButton.gameObject.SetActive(true);

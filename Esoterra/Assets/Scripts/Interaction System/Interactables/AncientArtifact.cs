@@ -42,7 +42,7 @@ public class AncientArtifact : DialogueUser
 
     void FirstInteract()
     {
-        AudioSource.PlayClipAtPoint(firstInteractAudio, transform.position, 0.6f);
+        AudioSource.PlayClipAtPoint(firstInteractAudio, transform.position, 1f);
         specialCrystals.SetActive(true);
         outerCrystals.transform.GetChild(0).gameObject.SetActive(true);
         outerCrystals.transform.GetChild(1).gameObject.SetActive(true);

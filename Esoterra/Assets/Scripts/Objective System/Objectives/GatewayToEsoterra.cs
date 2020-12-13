@@ -58,6 +58,6 @@ public class GatewayToEsoterra : Objective
     public override void GiveReward()
     {
         base.GiveReward();
-        teleporter.GetComponentInChildren<Teleporter>().enabled = true;
+        teleporter.GetComponentInChildren<TeleporterToEsoterra>().enabled = true;
     }
 }

@@ -8,19 +8,20 @@ public class Repairable : Interactable
 {
     [Header("Repairable Details")]
     [Tooltip("IDs of resources required to make the repair.")]
+    public bool continuousAudioWhenBroken = false;
+    public string repairButtonString = "Repair";
     public int[] requiredResources;
     public int[] requiredQuantity;
-    public bool continuousAudioWhenBroken = false;
 
     // To be displayed in the body of the repair UI
     string bodyString;
     [HideInInspector] public bool broken;
 
     // Audio
-    AudioSource audioRepair;
+    [HideInInspector] public AudioSource audioRepair;
     AudioSource continuousAudio;
 
-    Inventory inventory;
+    [HideInInspector] public Inventory inventory;
     [HideInInspector] public RepairManager repairManager;
     
     
@@ -109,14 +110,10 @@ public class Repairable : Interactable
 
     public virtual void Repair()
     {
-        // Subtype should tell EventManager its specific type
-        // EventManager.Repaired("Repairable");
-
         broken = false;
 
-        if (audioRepair != null) {
-            audioRepair.Play();
-        }
+        // Subtype should tell EventManager its specific type
+        // EventManager.Repaired("Repairable");
 
         // For each Resource in requiredResources
         for (int res=0; res<requiredResources.Length; res++) {
@@ -124,8 +121,12 @@ public class Repairable : Interactable
             inventory.RemoveResource(requiredResources[res], requiredQuantity[res]);
         }
 
-        // Enable or disable continuous audio after making the repair
+        // Audio
+        if (audioRepair != null) {
+            audioRepair.Play();
+        }
         if (continuousAudio != null) {
+            // Enable or disable continuous audio after making the repair
             if (continuousAudioWhenBroken) {
                 continuousAudio.enabled = false;
             } else {
@@ -146,6 +147,6 @@ public class Repairable : Interactable
     public override void Interact()
     {
         UpdateBodyString();
-        repairManager.AddNewRepair(displayName, bodyString, gameObject);
+        repairManager.AddNewRepair(displayName, bodyString, gameObject, repairButtonString);
     }
 }
