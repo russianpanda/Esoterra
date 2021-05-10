@@ -9,6 +9,7 @@
 
 <br>
 ## Running the Game
+
 Initial scene of the project is "Main Menu Room", which is used to start the game.
 
 ## Third Party Assets
