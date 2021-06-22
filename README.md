@@ -5,13 +5,24 @@
 </h3>
 
 ## ECS657U - Multi-Platform Game Development Project
-### Group AC : Vladislavas Gavinas, Amin Ullah, Shona Lowden
+### Group AC: 
+* Vladislavas Gavinas  
+* Shona Lowden
+* Amin Ullah
 
-<br>
+## Accesssing the Project
 
-## Running the Game
+To access the project, clone the repository via 
 
-Initial scene of the project is "Main Menu Room", which is used to start the game.
+`git clone https://github.com/russianpanda/Esoterra.git`
+
+or download it as a .ZIP file. There should be no problems with either methods now, as Git LFS has been removed from the project, and thus all project files are contained within the repository.
+
+## Running the Project
+
+Open Unity and follow the instructions outlined in the documentation page to load the project: [Opening existing Projects](https://docs.unity3d.com/2019.1/Documentation/Manual/GettingStartedOpeningProjects.html)
+
+Initial scene of the project is "Main Menu Room", which should be selected, as it is used to start the game.
 
 ## Third Party Assets
 
